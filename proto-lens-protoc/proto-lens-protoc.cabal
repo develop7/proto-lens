@@ -34,7 +34,7 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.10 && <4.19
+      base
     , filepath >=1.4 && <1.6
   default-language: Haskell2010
 
@@ -55,13 +55,13 @@ executable proto-lens-protoc
   hs-source-dirs:
       app
   build-depends:
-      base >=4.10 && <4.19
-    , bytestring >=0.10 && <0.12
+      base
+    , bytestring
     , containers >=0.5 && <0.7
     , filepath >=1.4 && <1.6
-    , ghc >=8.2 && <9.8
+    , ghc >=8.2 && <9.10
     , ghc-paths ==0.1.*
-    , ghc-source-gen ==0.4.*
+    , ghc-source-gen
     , lens-family >=1.2 && <2.2
     , pretty ==1.1.*
     , proto-lens ==0.7.*

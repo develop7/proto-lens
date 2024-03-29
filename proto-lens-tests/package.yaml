@@ -15,7 +15,7 @@ verbatim:
 
 custom-setup:
   dependencies:
-    - base
+    - base >= 4.10 && < 4.20
     - Cabal
     - proto-lens-setup
 
@@ -24,7 +24,7 @@ build-tools: proto-lens-protoc:proto-lens-protoc
 # Dependencies shared by the library and/or several of the tests:
 dependencies:
     - QuickCheck
-    - base
+    - base >= 4.10 && < 4.20
     - bytestring
     - lens-family
     - pretty

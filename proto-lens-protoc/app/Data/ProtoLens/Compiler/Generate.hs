@@ -10,6 +10,11 @@
 {-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE OverloadedLabels #-}
 {-# LANGUAGE OverloadedStrings #-}
+#if MIN_VERSION_ghc(9,8,0)
+-- GHC 9.8 introduces warnings on using partial functions, used below in lines 650, 652, and 657.
+-- We disable these warnings to avoid breaking the build.
+{-# OPTIONS_GHC -Wno-error=x-partial #-}
+#endif
 module Data.ProtoLens.Compiler.Generate(
     generateModule,
     ) where
